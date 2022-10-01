@@ -23,7 +23,6 @@ wwd.addLayer(new WorldWind.CompassLayer());
 wwd.addLayer(new WorldWind.CoordinatesDisplayLayer(wwd));
 wwd.addLayer(new WorldWind.ViewControlsLayer(wwd));
 
-// Add a placemark
 var placemarkLayer = new WorldWind.RenderableLayer();
 wwd.addLayer(placemarkLayer);
 
@@ -49,7 +48,6 @@ placemark.alwaysOnTop = true;
 
 placemarkLayer.addRenderable(placemark);
 
-// Add a polygon
 var polygonLayer = new WorldWind.RenderableLayer();
 wwd.addLayer(polygonLayer);
 

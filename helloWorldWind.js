@@ -38,22 +38,13 @@ placemarkAttributes.labelAttributes.offset = new WorldWind.Offset(
 
 placemarkAttributes.imageSource = WorldWind.configuration.baseUrl + "images/pushpins/plain-red.png";
 
-var position1 = new WorldWind.Position(55.0, -106.0, 100.0);
-var placemark1 = new WorldWind.Placemark(position, false, placemarkAttributes);
+var position = new WorldWind.Position(55.0, -106.0, 100.0);
+var placemark = new WorldWind.Placemark(position, false, placemarkAttributes);
 
-placemark1.label = "Placemark\n" +
-    "Lat " + placemark1.position.latitude.toPrecision(4).toString() + "\n" +
-    "Lon " + placemark1.position.longitude.toPrecision(5).toString();
-placemark1.alwaysOnTop = true;
-
-var position2 = new WorldWind.Position(54, -106.0, 100.0);
-var placemark2 = new WorldWind.Placemark(position, false, placemarkAttributes);
-
-
-placemark2.label = "Placemark\n" +
-    "Lat " + placemark2.position.latitude.toPrecision(4).toString() + "\n" +
-    "Lon " + placemark2.position.longitude.toPrecision(5).toString();
-placemark1.alwaysOnTop = true;
+placemark.label = "Placemark\n" +
+    "Lat " + placemark.position.latitude.toPrecision(4).toString() + "\n" +
+    "Lon " + placemark.position.longitude.toPrecision(5).toString();
+placemark.alwaysOnTop = true;
 
 placemarkLayer.addRenderable(placemark);
 

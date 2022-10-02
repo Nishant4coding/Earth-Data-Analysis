@@ -41,6 +41,18 @@ placemarkAttributes.imageSource = WorldWind.configuration.baseUrl + "images/push
 var position = new WorldWind.Position(55.0, -106.0, 100.0);
 var placemark = new WorldWind.Placemark(position, false, placemarkAttributes);
 
+var position = new WorldWind.Position(54, -106.0, 100.0);
+var placemark = new WorldWind.Placemark(position, false, placemarkAttributes);
+
+var position = new WorldWind.Position(58.0, -106.0, 100.0);
+var placemark = new WorldWind.Placemark(position, false, placemarkAttributes);
+
+var position = new WorldWind.Position(98.0, -106.0, 100.0);
+var placemark = new WorldWind.Placemark(position, false, placemarkAttributes);
+
+var position = new WorldWind.Position(44.0, -106.0, 100.0);
+var placemark = new WorldWind.Placemark(position, false, placemarkAttributes);
+
 placemark.label = "Placemark\n" +
     "Lat " + placemark.position.latitude.toPrecision(4).toString() + "\n" +
     "Lon " + placemark.position.longitude.toPrecision(5).toString();

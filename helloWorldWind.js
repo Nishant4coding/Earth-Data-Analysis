@@ -38,10 +38,10 @@ placemarkAttributes.labelAttributes.offset = new WorldWind.Offset(
 
 placemarkAttributes.imageSource = WorldWind.configuration.baseUrl + "images/pushpins/plain-red.png";
 
-var position = new WorldWind.Position(55.0, -106.0, 100.0);
+var position = new WorldWind.Position(8.7832, 124.5085, 100.0);
 var placemark = new WorldWind.Placemark(position, false, placemarkAttributes);
 
-placemark.label = "Placemark\n" +
+placemark.label = "Pacific Ocean\n" +
     "Lat " + placemark.position.latitude.toPrecision(4).toString() + "\n" +
     "Lon " + placemark.position.longitude.toPrecision(5).toString();
 placemark.alwaysOnTop = true;
